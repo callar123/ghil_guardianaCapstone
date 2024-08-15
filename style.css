@@ -1,0 +1,189 @@
+@keyframes changeBackground {
+    0% { background-image: url('image2.jpg'); }
+    33% { background-image: url('image3.jpg'); }
+    66% { background-image: url('image2.jpg'); }
+    100% { background-image: url('image3.jpg'); }
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    animation: changeBackground 15s infinite; /* Adjust the duration as needed */
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    background-color: #3d3d3d;
+    position: fixed; /* Fixed position */
+    width: 100%; /* Full width */
+    top: 0; /* Position at the top */
+    z-index: 1000; /* Ensure it stays on top of other elements */
+}
+
+.nav a {
+    color: white;
+    padding: 14px 30px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.nav .dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.nav .dropdown .dropbtn {
+    background-color: #3d3d3d;
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.nav .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.nav .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.nav .dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.nav .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.nav .dropdown:hover .dropbtn {
+    background-color: #575757;
+}
+
+.search-section {
+    margin: 200px 0 150px; /* Adjusted margin to account for fixed nav bar */
+    padding: 70px; /* Added padding */
+}
+
+.search-section p {
+    font-size: 30px; /* Reduced font size */
+    margin-bottom: 15px; /* Reduced margin */
+    background: -webkit-linear-gradient(#6a11cb, #2575fc); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#6a11cb, #2575fc); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#6a11cb, #2575fc); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#6a11cb, #2575fc); /* Standard syntax */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.search-section input {
+    padding: 15px; /* Increased padding */
+    width: 350px; /* Increased width */
+    margin-right: 10px; /* Increased margin */
+    font-size: 16px; /* Increased font size */
+}
+
+.search-section button {
+    padding: 12px 24px; /* Increased padding */
+    cursor: pointer;
+    font-size: 16px; /* Increased font size */
+}
+
+.about-section {
+    padding: 50px 20px;
+    background-color: #f1f1f1;
+}
+
+.extra-section {
+    padding: 50px 20px;
+    background-color: #d1d1d1;
+}
+
+.menu-section {
+    padding: 50px 20px;
+    background-color: #e1e1e1;
+}
+
+.menu-section h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.menu-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.menu-item {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 10px;
+    width: 200px;
+    text-align: center;
+    overflow: hidden; /* To ensure the background image doesn't overflow */
+}
+
+.menu-item .menu-img {
+    width: 100%;
+    height: 150px; /* Fixed height for all images */
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 10px;
+}
+
+.menu-item p {
+    font-size: 14px;
+    margin: 0;
+}
+
+/* Specific background images for each menu item */
+.menu-item-1 .menu-img {
+    background-image: url('image5.jpg');
+}
+
+.menu-item-2 .menu-img {
+    background-image: url('image6.jpg');
+}
+
+.menu-item-3 .menu-img {
+    background-image: url('image7.jpg');
+}
+
+.menu-item-4 .menu-img {
+    background-image: url('image8.jpg');
+}
+
+.menu-item-5 .menu-img {
+    background-image: url('image9.jpg');
+}
+
+.menu-item-6 .menu-img {
+    background-image: url('image10.jpg');
+}
+
+
+
+
+
+
+
+
+
